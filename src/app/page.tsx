@@ -1,5 +1,8 @@
+export const dynamic = 'force-dynamic'
+
 import About from "@/components/about";
 import Contact from "@/components/Contact";
+import CustomCursor from "@/components/CustomCursor";
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import Projects from "@/components/projects";
@@ -25,6 +28,7 @@ export default async function Home() {
 
   return (
     <main className="relative">
+      <CustomCursor />
       <Header social={social_handles} />
       <Hero about={about} />
       <About about={about} timeline={timeline} />

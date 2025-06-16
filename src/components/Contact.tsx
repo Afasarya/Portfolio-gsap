@@ -113,7 +113,7 @@ const Contact = ({ email, social_handle, about }: ContactProps) => {
       <div className="p-4 md:p-8 md:px-16">
         <SectionHeading className="">
           <SlideIn className="text-white/40">Interested in talking,</SlideIn>{" "}
-          <br /> <SlideIn>let's do it.</SlideIn>
+          <br /> <SlideIn>let&apos;s do it.</SlideIn>
         </SectionHeading>
         <div className="grid md:grid-cols-2 gap-10 md:pt-16">
           <form className="space-y-4" onSubmit={handleSubmit}>
