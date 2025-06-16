@@ -16,6 +16,10 @@ const nextConfig = {
       },
     ],
   },
+  serverExternalPackages: [],
+  env: {
+    CUSTOM_KEY: 'production',
+  },
 };
 
 export default nextConfig;

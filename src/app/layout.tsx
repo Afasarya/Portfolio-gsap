@@ -24,6 +24,8 @@ export default function RootLayout({
         />
         <meta name="grammarly-disable-editor" content="true" />
         <meta name="grammarly-disable-indicator" content="true" />
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className={poppins.className} suppressHydrationWarning>
         <VariantProvider>{children}</VariantProvider>
