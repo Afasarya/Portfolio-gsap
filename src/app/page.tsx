@@ -11,9 +11,10 @@ import Skills from "@/components/Skills";
 import Testimonials from "@/components/testimonials";
 import Timeline from "@/components/Timeline";
 import { Portfolio } from "@/utils/interface";
+import data from "@/dummy.json";
 
-export default async function Home() {
-  const portfolio = (await import("@/dummy.json")).default;
+export default function Home() {
+  const portfolio = data as Portfolio;
 
   const {
     about,
@@ -24,7 +25,7 @@ export default async function Home() {
     social_handles,
     timeline,
     email,
-  } = portfolio as Portfolio;
+  } = portfolio;
 
   return (
     <main className="relative">
